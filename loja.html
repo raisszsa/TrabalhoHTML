@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTransporte</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="icon" href="imagens/favicon-32x32.png" type="image/x-icon"/>
+
+</head>
+<body id="topo">
+      <!-- menu interagível -->
+  <div class="container"> <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> <span class="fs-4">GreenTransporte</span> </a> <ul class="nav nav-pills"> <li class="nav-item"><a href="index.html" class="nav-link active bg-success text-white" aria-current="page">Casa</a></li> <li class="nav-item "><a href="sobre.html" class="nav-link text-success-emphasis">Introdução</a></li> <li class="nav-item"><a href="loja.html" class="nav-link text-success-emphasis">Loja</a></li> <li class="nav-item"><a href="faq.html" class="nav-link text-success-emphasis">FAQ</a></li> <li class="nav-item"><a href="contato.html" class="nav-link text-success-emphasis">Contato</a></li> </ul> </header> </div>
+   
+   
+   
+   <header class="p-3 text-bg-success d-print-none">
+    <div class="container">
+      <h1 class="display-1">Loja</h1>
+      
+    
+    </div>
+   </header>
+
+
+   <article class="container py-3">
+    <h1 class="mb-4">Dinheiro Arrecadado</h1>
+    <p>Em nossa loja vendemos produtos biodegradáveis, compatíveis com o meio ambiente. Todo dinheiro das vendas será designado a ONGs de pesquisa sobre <strong>o uso de algoritmos de roteamento na redução da emissão de CO2 no transporte de mercadorias</strong>.</p>
+   <p>Para comprar, selecione os itens desejados e clique no botão "Pagamento". Após completar essa ação, haverá um redirecionamento para o preenchimento de informações, incluindo e-mail, endereço e nome completo. O método de pagamento é PIX ou boleto, enviados para o e-mail cadastrado no formulário<sup>(essa ação pode demorar até 15 minutos)</sup>.</p>
+   <p>Compartilhe nosso projeto para nos ajudar a tornar o mundo mais limpo por meio da tecnologia!</p>
+
+   
+    </article>
+   
+   
+   <br>
+   
+   <h1 class="mb-4 text-center">Produtos</h1>
+      <!--Aproveitado do exemplo do bootstrap "layout pricing e do blog"-->
+   <!--Cards da loja-->
+  
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Produtos</h1>
+  <div class="row g-4">
+
+    <!-- Produto 1 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="imagens/canudo.jpg" alt="Canudo" class="img-fluid rounded-start w-100 h-100">
+          </div>
+          <div class="col-8 p-2">
+            <h5 class="card-header">Canudo de Metal</h5>
+            <h5 class="card-title text-success">R$9,99</h5>
+            <label for="cor1" class="form-label text-secondary">Cor:</label>
+            <select class="form-select-sm text-secondary" id="cor1" name="opcoes">
+              <option selected>Preto</option>
+              <option>Cinza</option>
+              <option>Cinza-claro</option>
+            </select>
+            <label class="check-card d-block mt-2" for="opcao1">
+              <input type="checkbox" id="opcao1" name="opcoes[]" value="opcao1"> Selecionar
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="imagens/ecobag.jpg" alt="Ecobag" class="img-fluid rounded-start w-100 h-100">
+          </div>
+          <div class="col-8 p-2">
+            <h5 class="card-header">Ecobag</h5>
+            <h5 class="card-title text-success">R$14,99</h5>
+            <label class="check-card d-block mt-2" for="opcao2">
+              <input type="checkbox" id="opcao2" name="opcoes[]" value="opcao2"> Selecionar
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="imagens/sabonete.jpg" alt="Sabonete" class="img-fluid rounded-start w-100 h-100">
+          </div>
+          <div class="col-8 p-2">
+            <h5 class="card-header">Sabonete Artesanal</h5>
+            <h5 class="card-title text-success">R$7,99</h5>
+            <label for="cheiro1" class="form-label text-secondary">Cheiro:</label>
+            <select class="form-select-sm text-secondary" id="cheiro1" name="opcoes">
+              <option selected>Louro</option>
+              <option>Lavanda</option>
+              <option>Manga-rosa</option>
+            </select>
+            <label class="check-card d-block mt-2" for="opcao3">
+              <input type="checkbox" id="opcao3" name="opcoes[]" value="opcao3"> Selecionar
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="imagens/escovadedente.jpg" alt="Escova" class="img-fluid rounded-start w-100 h-100">
+          </div>
+          <div class="col-8 p-2">
+            <h5 class="card-header">Escova de Bambu</h5>
+            <h5 class="card-title text-success">R$9,99</h5>
+            <label class="check-card d-block mt-2" for="opcao4">
+              <input type="checkbox" id="opcao4" name="opcoes[]" value="opcao4"> Selecionar
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 5 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="imagens/esponjanatural.jpg" alt="Esponja" class="img-fluid rounded-start w-100 h-100">
+          </div>
+          <div class="col-8 p-2">
+            <h5 class="card-header">Esponja Natural</h5>
+            <h5 class="card-title text-success">R$3,99</h5>
+            <label class="check-card d-block mt-2" for="opcao5">
+              <input type="checkbox" id="opcao5" name="opcoes[]" value="opcao5"> Selecionar
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 6 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="imagens/rimel.jpg" alt="Rímel" class="img-fluid rounded-start w-100 h-100">
+          </div>
+          <div class="col-8 p-2">
+            <h5 class="card-header">Rímel de Bambu</h5>
+            <h5 class="card-title text-success">R$14,99</h5>
+            <label for="tipo1" class="form-label text-secondary">Tipo:</label>
+            <select class="form-select-sm text-secondary" id="tipo1" name="opcoes">
+              <option selected>Cílios longos</option>
+              <option>Volume curto</option>
+            </select>
+            <label class="check-card d-block mt-2" for="opcao6">
+              <input type="checkbox" id="opcao6" name="opcoes[]" value="opcao6"> Selecionar
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botão de pagamento -->
+  <div class="text-center mt-5">
+    <a href="pagamento.html" class="btn btn-outline-success btn-lg">Pagamento</a>
+  </div>
+</div>
+
+
+   <br>
+   
+    <footer class=" container footer mt-auto py-3 bg-success d-flex justify-content-center "> <div class="container"> <span class="text-body-secondary"> De volta ao <a class="text-white" href="#topo">topo</a>/ feito por: Raíssa spinelli, Emília Vieira, Júlia Santos e Eduardo Armesto./ referências: <a class="text-white" href="https://getbootstrap.com/">bootstrap</a>.</span> </div> </footer>
+</body>
+</html>
