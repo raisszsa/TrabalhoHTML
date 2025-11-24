@@ -80,9 +80,19 @@
                 </span>
                 
                 <span>
-                    <input type="submit" value="Enviar" class="botao rotacao">
+                    <input type="submit" value="Enviar" id="botaozinho">
                 </span>
+                    <div id="alerta" class="alert alert-success mt-3 d-none">
+                    Formulário enviado com sucesso!!
+                    </div>
+                  <script>
+                  const botao = document.getElementById("botaozinho");
+                 const alerta = document.getElementById("alerta");
 
+                   botao.addEventListener("click", () => {
+                   alerta.classList.toggle("d-none");
+                  });
+                  </script>
 
             </form>
 
@@ -158,6 +168,7 @@
 <!-- rodapé -->
 <footer class=" container footer mt-auto py-3 bg-success d-flex justify-content-center "> <div class="container"> <span class="text-body-secondary"> De volta ao <a class="text-white" href="#topo">topo</a>/ feito por: Raíssa spinelli, Emília Vieira, Júlia Santos e Eduardo Armesto./ referências: <a class="text-white" href="https://getbootstrap.com/">bootstrap</a>.</div> </footer>
 </html>
+
 
 
 
